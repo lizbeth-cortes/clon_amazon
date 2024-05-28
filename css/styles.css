@@ -1,0 +1,734 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    background-color: #E3E6E6;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#nav_principal a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav_principal nav.navbar {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+}
+
+
+
+/* ************************************************************************* */
+/* *************************************************************** */
+/* ********************NAVBAR PRINCIPAL****************** */
+
+
+div#nav_principal {
+    display: flex;
+    background-color: #131921;
+    color: white;
+    height: 60px;
+}
+
+/* TODO:  #nav_left*/
+#nav_left {
+    display: flex;
+    margin: 5px;
+}
+
+/* TODO:  #logo*/
+#nav_left,
+#nav_left #logo,
+.location a,
+.location-icon {
+    display: flex;
+}
+
+
+#nav_left #logo img {
+    width: 97px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+
+}
+
+#nav_left #logo a span.logo-text {
+    margin-top: 12px;
+}
+
+#nav_left #logo a {
+    padding: 1px 8px 0px 6px;
+}
+
+#nav_left #logo a span {
+    font-size: small;
+    font-weight: 500;
+}
+
+/* TODO:  #location*/
+
+.location {
+    display: flex;
+    align-items: center;
+    padding: 0px 9px;
+}
+
+.location .location-icon {
+    display: flex;
+    padding-right: 2px;
+}
+
+.location .location-icon i {
+    display: flex;
+    width: 16px;
+    height: 18px;
+    color: white;
+    align-self: end;
+}
+
+.location .location-text {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_above {
+    display: block;
+    color: #CCCCBC;
+    font-size: 11px;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.text_below {
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+
+/* TODO:  #nav_center*/
+#nav_center {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.search {
+    display: flex;
+    margin: 0px 6px;
+    flex-grow: 1;
+}
+
+#nav_center .search .input-group {
+    display: flex;
+    width: 100%;
+}
+
+
+#nav_center .search .input-group button.dropdown-toggle {
+    background-color: #ececec;
+    border: none;
+    color: #636363;
+    font-size: 11px;
+
+}
+
+#nav_center .search .input-group button.dropdown-toggle:hover {
+    color: #14001C;
+    background-color: #D4D4D4;
+}
+
+#nav_center .search .input-group button.dropdown-toggle {
+    outline: 3px solid transparent;
+}
+
+#nav_center .search .input-group button.dropdown-toggle:active {
+    outline: 3px solid #ffbb02;
+}
+
+#nav_center .search .input-group button.dropdown-toggle:focus {
+    outline: 3px solid #ffbb02;
+}
+
+#nav_center .search .input-group ul li a {
+    color: #14001C;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+#nav_center .search .input-group input {
+    padding: 7px 10px 10px 0px;
+    margin: 0;
+    border: none;
+    font-size: 14px;
+    outline: 3px solid transparent;
+    text-indent: 8px;
+    box-shadow: none;
+    line-height: 15px;
+
+}
+
+#nav_center .search .input-group input:focus {
+    outline: 3px solid #ffbb02;
+}
+
+
+#nav_center .search .input-group button.btn.btn-warning {
+    outline: 3px solid transparent;
+}
+
+#nav_center .search .input-group button.btn.btn-warning:focus {
+    outline: 3px solid #ffbb02;
+}
+
+/* TODO:  #nav_right*/
+
+
+#nav_right,
+#nav_right .user,
+#nav_right .user .dropdown a {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+
+}
+
+#nav_right .user .dropdown {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* TODO:  .user*/
+
+#nav_right .user {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+#nav_right .user div.user-texto,
+#nav_right .text-transactions a {
+    margin: 0;
+    /* padding-bottom: 4px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nav_right .user div.user-icon span {
+    display: flex;
+    align-self: end;
+    padding-bottom: 5px;
+}
+
+/* TODO:  .orders_returns*/
+
+.text-transactions {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+div.orders_returns,
+div.shopping,
+div#shop,
+div.shopping div.shop a span {
+    display: flex;
+}
+
+/* TODO:  .shopping*/
+
+.shop {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+div.shopping div.shop a span.icon-shop {
+    font-size: 2rem;
+    line-height: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+div.shopping div.shop a {
+    display: flex;
+    align-items: end;
+}
+
+.hover {
+    border: 1px solid transparent;
+
+}
+
+.hover:hover {
+    border-color: white;
+    border-radius: 3px;
+}
+
+
+/* ************************************************************************* */
+/* *************************************************************** */
+/* ********************NAVBAR SECUNDARIO****************** */
+
+.nav_secundario {
+    background-color: #232f3e;
+}
+
+.nav_secundario,
+.nav_2 {
+    display: flex;
+    padding: 0%;
+    margin: 0;
+}
+
+.nav_secundario .nav_2 li {
+    display: flex;
+}
+
+.nav_secundario .nav_2 .nav-link {
+    color: white;
+    font-size: 14px;
+}
+
+.nav_secundario .nav_2 a {
+    display: flex;
+    align-items: center;
+    padding: 2px 0px;
+    font-weight: 400;
+    border: 1px solid transparent;
+}
+
+.nav_secundario .nav_2 a:hover {
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.nav_secundario .nav_2 .nav-link .menu-text {
+    font-weight: bold;
+}
+
+.nav_secundario .nav_2 .nav-link .menu-icon {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-right: 2px;
+}
+
+
+
+/* ************************************************************************* */
+/* *************************************************************** */
+/* ************** CARRUSEL *************** */
+
+.carrusel{
+    height: 250px; 
+    width: 100%; /* Mantiene la proporción de la imagen */
+}
+
+.carousel-item .img1{
+    height: 250px; 
+    width: 100%; 
+    background-image: url("/images/img1.png");
+    background-size: cover;
+}
+
+.carousel-item .img2{
+    height: 250px;
+    width: 100%;
+    background-image: url("/images/img2.png");
+    background-size: cover;
+}
+
+.carousel-item .img3{
+    height: 250px;
+    width: 100%; 
+    background-image: url("/images/img3.png");
+    background-size: cover;
+}
+
+.carousel-control-prev .icono,
+.carousel-control-next .icono {
+    /* position: absolute; */
+    transform: translateX(0%);
+    font-size: 2rem;
+}
+
+.carousel-control-prev span i,
+.carousel-control-next span i {
+    color: rgb(2, 1, 1); /* Cambia el color del icono */
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    cursor: pointer;
+    width: 80px;
+    height: 250px;
+    border-radius: 5px;
+    border: 3px solid transparent; 
+    outline: 3px solid transparent;
+    z-index: 1;
+    position: absolute;
+}
+
+
+.carousel-control-prev::before,
+.carousel-control-next::before {
+    content: ''; 
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 5px; 
+    border: 2px solid transparent; 
+    outline: 2px solid transparent;
+}
+
+.carousel-control-prev:focus::before,
+.carousel-control-next:focus::before {
+    border-color: black; 
+    outline-color: white;
+}
+
+
+
+
+/* ************************************************************************* */
+/* *************************************************************** */
+/* ***************CARDS-OFERTAS RENGLÓN 1*************** */
+.content-cards{
+    padding: 10px 10px;
+}
+.renglon-1{
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    justify-content: center;
+    
+}
+
+
+.renglon-1 .tendencia .card, .renglon-1 .seguir-comprando .card, .renglon-1 .retomar-compra .card, .renglon-1 .promociones .card{
+    height: 100%;
+    border-radius: 0%;
+    border: none;
+}
+
+.tendencia.card, .seguir-comprando.card, .retomar-compra.card, .promociones.card{
+    display: flex;
+    margin: 0 10px;
+    
+}
+
+.tendencia, .seguir-comprando, .retomar-compra, .promociones{
+    padding: 0 10px;
+    
+}
+
+
+
+.card-body{
+    padding: 20px 0 15px;
+
+}
+
+.card-title{
+    margin-bottom:10px ;
+    padding: 0px 20px;
+}
+
+div.row{
+    padding: 0px 20px;
+
+}
+
+div.col{
+    padding: 0px 3px;
+}
+
+.container-img{
+
+    height: 140px;
+    width: 140px;
+    padding: 6px 5px;
+}
+
+.card{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .col a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2px;
+    justify-content: center;
+}
+
+.card .col .porcentaje{
+    color: rgb(212, 3, 3);
+    font-size: smaller;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.container-text{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.etiqueta_prom{
+    background-color: rgb(212, 3, 3);
+    padding: 0 6px;
+    border-radius: 3px;
+
+}
+
+.card .col .promocion{
+    color: rgb(255, 255, 255);
+    font-size: smaller;
+    font-weight: 600;
+
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: rgb(48, 48, 48);
+    font-size: 13px;
+}
+
+/* ************************************************************************* */
+/* *************************************************************** */
+/* ***************  FOOTER DE INICIO *************** */
+
+footer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.footer_inicio {
+    display: flex;
+    font-size: small;
+    background-color: #364455;
+    justify-content: center;
+}
+
+.footer_inicio a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+    display: flex;
+    align-self: center;
+}
+
+
+/* ************************************************************************* */
+/* *************************************************************** */
+/* *************** FOOTER DE INFORMACIÓN *************** */
+footer.footer_info {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_contenedor {
+    display: flex;
+    padding: 40px 0;
+    background-color: #232F3E;
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho */
+
+}
+
+.footer_columnas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    /* Ajusta el tamaño máximo según tu diseño */
+    margin: 0 auto;
+}
+
+.footer_columnas ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer_columnas ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.footer_columnas .footer_col1 ul li a,
+.footer_col2 ul li a,
+.footer_col3 ul li a,
+.footer_col4 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    line-height: 1rem;
+
+}
+
+.footer_columnas .footer_col1 ul li a {
+    max-width: 120px;
+    word-wrap: break-word;
+}
+
+.footer_columnas .footer_col2 ul li a {
+    max-width: 190px;
+    word-wrap: break-word;
+}
+
+.footer_columnas .footer_col3 ul li a {
+    max-width: 165px;
+    word-wrap: break-word;
+}
+
+.footer_columnas .footer_col4 ul li a {
+    max-width: 165px;
+    word-wrap: break-word;
+}
+
+.footer_columnas ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_info .footer_columnas span {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 6px 0 14px;
+    display: block;
+    /* Asegura que el span ocupe todo el ancho */
+    max-width: 200px;
+    /* Ajusta el ancho máximo */
+}
+
+.footer_col1,
+.footer_col2,
+.footer_col3,
+.footer_col4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 195px;
+    /* Ajusta el ancho máximo  */
+}
+
+div.space {
+    width: 100px;
+    height: 100%;
+}
+
+/* ************************************************************************* */
+/* *************************************************************** */
+/* *************** FOOTER DE IDIOMAS *************** */
+.line {
+    background-color: #232F3E;
+}
+
+hr {
+    border-top: 1px solid #718096;
+    /* Define el color y grosor de la línea */
+    margin: 0;
+    padding: 0;
+}
+
+.footer_idiomas {
+    display: flex;
+    margin: 0 auto;
+    background-color: #232F3E;
+    justify-content: center;
+}
+
+.container_idiomas {
+    background-color: #232F3E;
+    display: flex;
+    padding: 35px 0px 25px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.footer_idiomas .btn {
+    display: flex;
+    align-items: center;
+    color: #d3d3d3;
+    border: 1px solid #6e6e6e;
+    font-size: 13px;
+}
+
+
+.logo-footer {
+    width: 80px;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    /* Esto mantiene la proporción de la imagen */
+}
+
+/* ************************************************************************* */
+/* *************************************************************** */
+/* *************** FOOTER FINAL *************** */
+
+.footer_final {
+    background-color: #131A22;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 30px;
+}
+
+.terminos,
+.info_adic {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_final div span a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer_final div span a:hover {
+    text-decoration: underline;
+}
+
+.info_adic span {
+    color: white;
+    font-size: 12px;
+}
